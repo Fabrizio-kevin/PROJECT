@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{37FE8F7C-5C67-48C4-8445-151CFBB0448F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PROJECT</RootNamespace>
+    <AssemblyName>PROJECT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelpandSupportCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpandSupportCenter.Designer.cs">
+      <DependentUpon>HelpandSupportCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KosPria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KosPria.Designer.cs">
+      <DependentUpon>KosPria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kospria1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kospria1.Designer.cs">
+      <DependentUpon>kospria1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kospria2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kospria2.Designer.cs">
+      <DependentUpon>kospria2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kost.Designer.cs">
+      <DependentUpon>Kost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KostCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KostCategories.Designer.cs">
+      <DependentUpon>KostCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KostRecomendationns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KostRecomendationns.Designer.cs">
+      <DependentUpon>KostRecomendationns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KostSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KostSearch.Designer.cs">
+      <DependentUpon>KostSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KosWanita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KosWanita.Designer.cs">
+      <DependentUpon>KosWanita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="koswanita1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="koswanita1.Designer.cs">
+      <DependentUpon>koswanita1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="koswanita2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="koswanita2.Designer.cs">
+      <DependentUpon>koswanita2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineReservationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlineReservationForm.Designer.cs">
+      <DependentUpon>OnlineReservationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Privacy and Security Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Privacy and Security Settings.Designer.cs">
+      <DependentUpon>Privacy and Security Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservation.Designer.cs">
+      <DependentUpon>Reservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result.Designer.cs">
+      <DependentUpon>Result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomAvailabilityCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomAvailabilityCalendar.Designer.cs">
+      <DependentUpon>RoomAvailabilityCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserProfile.Designer.cs">
+      <DependentUpon>UserProfile.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpandSupportCenter.resx">
+      <DependentUpon>HelpandSupportCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KosPria.resx">
+      <DependentUpon>KosPria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kospria1.resx">
+      <DependentUpon>kospria1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kospria2.resx">
+      <DependentUpon>kospria2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kost.resx">
+      <DependentUpon>Kost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KostCategories.resx">
+      <DependentUpon>KostCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KostRecomendationns.resx">
+      <DependentUpon>KostRecomendationns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KostSearch.resx">
+      <DependentUpon>KostSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KosWanita.resx">
+      <DependentUpon>KosWanita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="koswanita1.resx">
+      <DependentUpon>koswanita1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="koswanita2.resx">
+      <DependentUpon>koswanita2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineReservationForm.resx">
+      <DependentUpon>OnlineReservationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Privacy and Security Settings.resx">
+      <DependentUpon>Privacy and Security Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reservation.resx">
+      <DependentUpon>Reservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result.resx">
+      <DependentUpon>Result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomAvailabilityCalendar.resx">
+      <DependentUpon>RoomAvailabilityCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserProfile.resx">
+      <DependentUpon>UserProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Free Vector _ Gradient style white monochrome background.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Simple User Icon transparent PNG - StickPNG.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y2k stars.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Karaikudi Heritage %282%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The Historic Midcentury Modernist Motels of the New Jersey Coast.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Critical Cities.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FERRARS &amp; YORK _ Ferrars and York.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Miami continental.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gallery _ Pictures of Fort Bazaar, Galle Fort _ Teardrop Hotels.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Innenhof.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %286%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %287%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Innenhof1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Free Search PNG, SVG Icon.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Free Search PNG, SVG Icon1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ícone de avaliação de cinco estrelas.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gallery _ Pictures of Fort Bazaar, Galle Fort _ Teardrop Hotels1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14 144th St UNIT 301, Ocean City, MD 21842 _ Zillow.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The Historic Midcentury Modernist Motels of the New Jersey Coast1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apartment in Rovinj.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Innenhof2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\THE SURFRIDER HOTEL, MALIBU - Updated 2024 Prices &amp; Motel Reviews %28CA%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Patio.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %285%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The Drifter Motel and Swim Club.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FERRARS &amp; YORK _ Ferrars and York1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %288%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Innenhof3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gallery _ Pictures of Fort Bazaar, Galle Fort _ Teardrop Hotels2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14 144th St UNIT 301, Ocean City, MD 21842 _ Zillow1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gallery _ Pictures of Fort Bazaar, Galle Fort _ Teardrop Hotels3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FERRARS &amp; YORK _ Ferrars and York2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The Drifter Motel and Swim Club1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Simple User Icon transparent PNG - StickPNG1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Free Vector _ Gradient style white monochrome background1.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
